@@ -107,6 +107,7 @@ div.Header_Button{
     width: 100%;  height: 10%;
     background-color: rgba(252,194,246,0.5);
     filter: drop-shadow(10px 10px 10px rgba(11,11,11,0.6));
+    z-index: 999;
   }
   a.Header_title_title1{
     font-size:75%;
