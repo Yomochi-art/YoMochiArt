@@ -1,0 +1,109 @@
+/************************/
+/*  ホームのみに適応するcss */
+/*  作成日：2020年06月07日 */
+/*  更新日：              */
+/*  作成者：Yomogi Mochi  */
+/************************/
+/* 参考サイト:https://www.atmarkit.co.jp/ait/articles/1306/10/news009.html*/
+@media screen and (min-width:961px){/*PC用*/
+  #Selector>ul, #Selector>ul>li{
+      margin: 0%;
+  }
+  #Selector>ul>li>p{
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #Selector{
+    margin: 0%;
+    height:18.75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #GridPage{
+    margin: 0%;
+    height:73.75%;
+    overflow-y: scroll;
+  }
+  .grid {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    float: left;
+    font-size: 12px;
+    margin: 8px;
+    min-height: 100px;
+    padding: 15px;
+    width: 188px;
+    transition: top 1s ease, left 1s ease;
+  }
+  .grid h2 {
+    border-bottom: 1px solid #ccc;
+    color: #fa3599;
+    display: block;
+    font-family: 'Donegal One', serif;
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 0 0 5px;
+  }
+}
+
+@media screen and  (max-width:960px)  { /*スマフォ*/
+  #Selector>ul>li>p{
+    font-size: 10px;
+    cursor: pointer;
+  }
+  #Selector{
+    margin: 0%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #GridPage{
+    margin: 0%;
+    height:75%;
+    overflow-y: scroll;
+  }
+  .grid {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    float: left;
+    font-size: 12px;
+    margin: 8px 0px 8px 0px;
+    min-height: 100px;
+    padding: 15px;
+    width: 75px;
+    transition: top 1s ease, left 1s ease;
+  }
+  .grid h2 {
+    border-bottom: 1px solid #ccc;
+    color: #fa3599;
+    display: block;
+    font-family: 'Donegal One', serif;
+    font-size: 10px;
+    margin: 7.5px 0;
+    padding: 0 0 5px;
+  }
+   .meta {
+     font-size: 10px;
+   }
+}
+
+#Selector>ul, #Selector>ul>li{
+    display: inline-block;
+}
+.container {
+  margin: 0 auto 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.grid .meta {
+  color: #777;
+  font-style: italic;
+  text-align: right;
+}
+.grid .imgholder img {
+  background: #ccc;
+  display: block;
+  max-width: 100%;
+}

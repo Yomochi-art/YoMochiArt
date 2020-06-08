@@ -1,0 +1,138 @@
+/************************/
+/*  全てのページに適応する   */
+/*  作成日：2020年06月06日 */
+/*  更新日：              */
+/*  作成者：Yomogi Mochi  */
+/************************/
+/*全体設定*/
+@font-face {
+  font-family: "Cotillion";
+  font-style: normal;
+  src: url("../Font/COTILLIO.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hannari";
+  src: url("../Font/Hannari.otf") format('opentype');
+}
+/*@font-face {
+  font-family: "Yeseva One";
+  src:url("YesevaOne-Regular.ttf") format("truetype");
+}*/
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  font-family: "Yeseva One","Hannari";
+  scroll-behavior: smooth;
+}
+h2, h6{
+  margin:0%;
+}
+
+ul li{
+   display: inline;
+}
+
+a {
+  color:#000;
+  text-decoration:none;
+}
+/*Header部分*/
+
+
+div#Header_title{
+  float: left;
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+div.Header_Button{
+  float: right;
+  margin-right: 5%;
+  height:  100%;
+  display: flex;
+  align-items: center;     /*上下中央揃え*/
+  font-size: 200%;
+}
+@media screen and (min-width:961px){/*PC用*/
+  /*Header*/
+  div#Header{
+    position: absolute;
+    /*position: fixed;*/
+    margin: 0%;top:0;left: 0;
+    width: 100%;  height: 10%;
+    background-color: rgba(252,194,246,0.5);
+    filter: drop-shadow(10px 10px 10px rgba(11,11,11,0.6));
+  }
+
+  a.Header_title_title1{
+    font-size:200%;
+    margin:0%;
+  }
+  a.Header_title_title2{
+    font-size:100%;
+    margin:0%;
+  }
+  div.Header_Button{
+    float: right;
+    margin-right: 5%;
+    height:  100%;
+    display: flex;
+    align-items: center;     /*上下中央揃え*/
+    font-size: 200%;
+  }
+  /*Footer部分*/
+  div#Footer{
+    background-color: #FFAAD3;
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #8c8c8c;
+  }
+}
+@media screen and  (max-width:960px)  { /*スマフォ*/
+  /*Header*/
+  div#Header{
+    position: fixed;
+    margin: 0%;top:0;left: 0;
+    width: 100%;  height: 10%;
+    background-color: rgba(252,194,246,0.5);
+    filter: drop-shadow(10px 10px 10px rgba(11,11,11,0.6));
+  }
+  a.Header_title_title1{
+    font-size:75%;
+    margin:0%;
+  }
+  a.Header_title_title2{
+    font-size:25%;
+    margin:0%;
+  }
+  div.Header_Button{
+    float: right;
+    margin-right: 5%;
+    height:  100%;
+    display: flex;
+    align-items: center;     /*上下中央揃え*/
+    font-size: 80%;
+  }
+  /*Footer部分*/
+  div#Footer{
+    background-color: #FFAAD3;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15%;
+    color: #8c8c8c;
+  }
+}

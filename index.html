@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <!---------------------------------->
+  <!--   ホーム画面のhtml              -->
+  <!--   作成日：2020年06月06日         -->
+  <!--   更新日：                      -->
+  <!--   作成者：Yomogi Mochi          -->
+  <!----------------------------------->
+  <head>
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>蓬もちArt</title>
+    <script type="text/javascript" src="./Scripts/jquery-2.0.2.min.js"></script>
+
+    <!-- <script src="./Scripts/jquery.lazyload.min.js"></script> -->
+
+      <script type="text/javascript" src="./Scripts/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="./Scripts/index.js"></script>
+    <link rel="stylesheet" href="./Scripts/index.css" type="text/css">
+    <link rel="stylesheet" href="./Scripts/all.css" type="text/css">
+    <!-- <script type="text/javascript" src="./Scripts/all.js"></script> -->
+  </head>
+  <body>
+    <!--Header-->
+    <div id="Header">
+      <div id="Header_title">
+        <a class="Header_title_title1">蓬もち-Art</a>
+        <a class="Header_title_title2">Illustration/Design</a>
+      </div>
+
+      <div class="Header_Button" id="Header_Illustrations"><a href="./Illustration.html">Illustrations</a></div>
+      <div class="Header_Button" id="Header_Profile"><a href="./Profile.html">Profile</a></div>
+      <div class="Header_Button" id="Header_Home"><a href="./">Home</a></div>
+    </div>
+    <!--Home（画像のみ）-->
+    <div id="Home"></div>
+    <!--Profile情報を描く-->
+    <div id="Profile">
+      <p class="Profile">Profile</p>
+      <!--<h2 class="Profile">Profile</h2>-->
+      <div class="Profile_Icon">
+        <img src="./Images/Icon.jpg" alt="Icon" class="Profile_Icon"></img>
+        <div class="profile_icons_info">
+          <p>蓬もち</p>
+          &emsp;絵描き/エンジニア
+        </div>
+        <a href="https://twitter.com/YomogiMochi0827" target="_blank"><img class="profile_sns_icons" src="./Images/Icons/twitter.png" alt="twitter_icon"></img></a>
+        <a href="https://www.pixiv.net/users/37157158" target="_blank"><img class="profile_sns_icons" src="./Images/Icons/pixiv.png" alt="pixiv_iconIcon"></img></a>
+        <a href="https://github.com/Yomochi-art" target="_blank"><img class="profile_sns_icons" src="./Images/Icons/GitHub.png" alt="facebook_icon"></img></a>
+        <a href="https://piapro.jp/yomogi0827" target="_blank" class="profile_sns_icons">piapro</a>
+      </div>
+    </div>
+    <!--Illustrations作品情報を置く-->
+    <div id="Illustrations">
+      <div class="Illustration" id="Illustration_Original" style='background-image: url("./Images/BackGround/Original.jpg");background-size: cover;background-position: 50% 50%;background-color:rgba(252,194,246,0.25);background-blend-mode:lighten;'>
+        <p class="Illustration_Title"><a href="./Illustration.html?val=Original">Original</a></p>
+        <div class="Illustration_Illusts" id="Illustration_Original_Illusts"></div>
+      </div>
+      <div class="Illustration" id="Illustration_FanFiction" style='background-image: url("./Images/BackGround/FanFiction.jpg");background-size: cover;background-position: 50% 50%;background-color:rgba(252,194,246,0.25);background-blend-mode:lighten;'>
+        <p class="Illustration_Title"><a href="./Illustration.html?val=FanFiction">FanFiction</a></p>
+        <div class="Illustration_Illusts" id="Illustration_FanFiction_Illusts"></div>
+      </div>
+      <div class="Illustration" id="Illustration_Vocaloid" style='background-image: url("./Images/BackGround/Vocaloid.jpg");background-size: cover;background-position: 50% 50%;background-color:rgba(252,194,246,0.25);background-blend-mode:lighten;'>
+        <p class="Illustration_Title"><a href="./Illustration.html?val=Vocaloid">Vocaloid</a></p>
+        <div class="Illustration_Illusts" id="Illustration_Vocaloid_Illusts"></div>
+      </div>
+      <div class="Illustration" id="Illustration_Request" style='background-image: url("./Images/BackGround/Request.jpg");background-size: cover;background-position: 50% 50%;background-color:rgba(252,194,246,0.25);background-blend-mode:lighten;'>
+        <p class="Illustration_Title"><a href="./Illustration.html?val=Request">Request</a></p>
+        <div class="Illustration_Illusts" id="Illustration_Request_Illusts"></div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div id="Footer">
+      Copyright©YomogiMochi0827. All Rights Reserved.
+    </div>
+  </body>
+</html>

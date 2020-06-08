@@ -1,0 +1,72 @@
+/****************************/
+/*  プロフィールのみに適応するcss */
+/*  作成日：2020年06月06日     */
+/*  更新日：                  */
+/*  作成者：Yomogi Mochi      */
+/****************************/
+
+@media screen and (min-width:961px){/*PC用*/
+  .Profile{
+    display: flex;
+    margin-top: 7.5%;
+    height: 30%;
+  }
+  .Profile_Icon>img{
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    height: 50%;
+  }
+  #Profile_Name{
+    font-size: 300%;
+    margin: 0%;
+  }
+  .Another_Info{
+    padding-left: 21.5%;
+    padding-right: 15%;
+  }
+  br.br_hidden2{
+    display: none;
+  }
+}
+
+@media screen and  (max-width:960px)  { /*スマフォ*/
+  .Profile_Icon>img{
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width: 75%;
+  }
+  #Profile_Name{
+    font-size: 175%;
+    margin: 0%;
+  }
+  br.br_hidden{
+    display: none;
+  }
+  br.br_hidden2{
+    display: ;
+  }
+  .Profile_Info_style{
+    font-size: 92.5%;
+  }
+  .Another_Info{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    font-size: 20%;
+  }
+}
+.Profile{
+  display: flex;
+  margin-top: 7.5%;
+}
+.Profile_Icon{
+  width: 30%;
+  /*background-color: #FF0000;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Profile_Info{
+  width: 70%;
+  /*background-color: #00ff00;*/
+  display: flex;
+  align-items: center;
+}
