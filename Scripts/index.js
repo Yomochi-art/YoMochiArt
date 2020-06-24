@@ -16,17 +16,18 @@
           }else{
             var url = "./Images/"+this[0]+"/"+this[1]+'.'+this[2];
           }
-          object = $('<img class="Illustration_images" src="'+url+'"></img>')
-          $("#Illustration_"+this[0]+"_Illusts").append(object);
-          //画像のサイズを正方形にトリミングする
-          /*$("img.Illustration_images").each(function(){
-            $(this).width($(this).height());
-          });
-          */
-          object.width(object.height())
-          
           //$("img").each(function(){$(this).lazyload()});
+          if (this[5] == null || this[5] == '') {
+            this[5] = "./Illustration.html?val=" + this[0]
+          }
 
+          object = $('<a href="'+this[5]+'" class="Illustration_images"></a>')
+          object2 = $('<img class="Illustration_images" src="'+url+'"></img>')
+          object.append(object2); //リンクの下に画像を添付
+          $("#Illustration_"+this[0]+"_Illusts").append(object);
+          object.width(object.height())
+          object2.width(object.height())//画像を正方形にする
+          object2.height(object.height())//画像を正方形にする
       });
     });
 

@@ -30,8 +30,15 @@ $(function() {
             }else{
               var url = "./Images/"+this[0]+"/"+this[1]+'.'+this[2];
             }
+            if (this[5] == null || this[5] == '') {
+              this[5] = "./Illustration.html?val=" + this[0]
+              var set_contents = $('<div class="grid '+this[0]+'"><div class="imgholder"><a href="'+this[5]+'"><img class="'+this[0]+'" src="'+url+'"></img></a></div><h2>'+this[4]+'</h2><div class="meta">'+this[3]+'</div></div>')
+
+            }
             //要素を付けていく
-            var set_contents = $('<div class="grid '+this[0]+'"><div class="imgholder"><a href="'+this[5]+'" target="_blank"><img class="'+this[0]+'" src="'+url+'"></img></a></div><h2>'+this[4]+'</h2><div class="meta">'+this[3]+'</div></div>')
+            else{
+              var set_contents = $('<div class="grid '+this[0]+'"><div class="imgholder"><a href="'+this[5]+'" target="_blank"><img class="'+this[0]+'" src="'+url+'"></img></a></div><h2>'+this[4]+'</h2><div class="meta">'+this[3]+'</div></div>')
+            }
             $("div.container").append(set_contents);
             set_contents.ready(function(){
                 select_images(query_val)

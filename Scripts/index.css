@@ -150,9 +150,17 @@ div.Illustration_Illusts{
     display: flex;
   flex-wrap: nowrap;
 }
-
+/*
 img.Illustration_images{
   object-fit: cover;
   height: 80%;
   margin-left: 5%;
+}*/
+
+a.Illustration_images{
+  height: 80%;
+  margin-left: 5%;
+}
+img.Illustration_images{
+  object-fit: cover;
 }
