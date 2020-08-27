@@ -49,7 +49,7 @@ $(function() {
     //$("img").each(function(){$(this).lazyload()});
 
     //オブジェクトを選択したものだけを表示するようにする
-    $("p").click(function () {
+    $(".Selector_Category").click(function () {
       var id =  $(this).attr("id");
       val = $(this).val();
       //すでに選択中の場合
@@ -62,7 +62,7 @@ $(function() {
 
 function select_images(lavelval){
     //選択中のオブジェクトから選択を外す
-    $("p").each(function(){
+    $(".Selector_Category").each(function(){
       if (lavelval ==$(this).attr('id')){
         //選択したオブジェクトを選択中にする
         $(this).val('select');
