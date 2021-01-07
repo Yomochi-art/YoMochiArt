@@ -27,11 +27,9 @@ $(function() {
       var page_x = document.documentElement ? document.documentElement.scrollLeft : document.body.scrollLeft;
       var page_y = document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop;
       var position = '&page_x=' + page_x + '&page_y=' + page_y;
-      if(!url.match(re)) {
-              //初回
+      if(!url.match(re)) {//初回
               location.href = url + position;
-      } else {
-              //2回目以降
+      } else {//2回目以降
               location.href = url.replace(/&page_x=(\d+)&page_y=(\d+)/,position);
       }
     }
@@ -46,10 +44,10 @@ $(function() {
       }
     }
 
-    (window.onload = function() {
+    $(window).load(function() {
           restore_scroll();
           console.log('windwo load完了')
-    })();
+    });
 
     $(window).on("resize", function() {
       console.log('resize')
