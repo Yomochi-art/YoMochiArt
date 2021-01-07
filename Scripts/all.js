@@ -50,8 +50,18 @@ $(function() {
           console.log('windwo load完了')
     });
 
-    $(window).on("resize", function() {
+
+    // ユーザーエージェントの判別
+    var userAgent = navigator.userAgent;
+
+    // スマートフォンの場合はorientationchangeイベントを監視する
+    if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("iPad") >= 0 || userAgent.indexOf("Android") >= 0)
+        window.addEventListener("orientationchange", resizeHandler);
+    else
+        window.addEventListener("resize", resizeHandler);
+
+    function resizeHandler() {
       console.log('resize')
       location.reload();
-    });
+    }
 });
