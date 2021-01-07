@@ -42,14 +42,17 @@ $(function() {
       if(window.location.href.match(re)) {
               var position = window.location.href.match(re)
               window.scrollTo(position[1],position[2]);
+              console.log('スクロール位置を正す')
       }
     }
 
     (window.onload = function() {
           restore_scroll();
+          console.log('windwo load完了')
     })();
 
     $(window).on("resize", function() {
+      console.log('resize')
       location.reload();
     });
 });
