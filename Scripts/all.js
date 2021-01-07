@@ -21,7 +21,7 @@ $(function() {
 
 
     function keep_scroll_reload() {
-      console.log('leep scroll reload')
+      //console.log('leep scroll reload')
       //コピペ：https://qiita.com/tukiyo3/items/7f79d8217a0e46ecc64f
       // リロード TODO: ?が無い場合対応
       var re = /&page_x=(\d+)&page_y=(\d+)/;
@@ -41,16 +41,17 @@ $(function() {
       if(window.location.href.match(re)) {
               var position = window.location.href.match(re)
               window.scrollTo(position[1],position[2]);
-              console.log('スクロール位置を正す')
+              //console.log('スクロール位置を正す')
       }
     }
 
     $(window).load(function() {
           restore_scroll();
-          console.log('windwo load完了')
+          //console.log('windwo load完了')
     });
 
 
+    //https://qiita.com/tonkotsuboy_com/items/d32ec6e7a1f6f592d415
     // ユーザーエージェントの判別
     var userAgent = navigator.userAgent;
 
@@ -61,7 +62,7 @@ $(function() {
         window.addEventListener("resize", resizeHandler);
 
     function resizeHandler() {
-      console.log('resize')
+      //console.log('resize')
       location.reload();
     }
 });
