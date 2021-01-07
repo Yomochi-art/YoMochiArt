@@ -21,6 +21,7 @@ $(function() {
 
 
     function keep_scroll_reload() {
+      console.log('leep scroll reload')
       //コピペ：https://qiita.com/tukiyo3/items/7f79d8217a0e46ecc64f
       // リロード TODO: ?が無い場合対応
       var re = /&page_x=(\d+)&page_y=(\d+)/;
